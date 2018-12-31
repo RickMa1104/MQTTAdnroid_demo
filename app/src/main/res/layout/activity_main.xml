@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.xuhoys.mqttadnroid_demo.MainActivity">
+
+    <Button
+        android:onClick="btnSubrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订阅信息，主题是 /xuhong  ,质量是0"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnSend"
+        android:text="信息，主题是 /xuhong ,质量是0信息是 hello xuhongts"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/tvShow"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="注意，必须初始化之后，才可以点击按钮，否则闪退 " />
+
+
+</LinearLayout>
